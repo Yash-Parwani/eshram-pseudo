@@ -1,0 +1,47 @@
+
+    
+    <link rel="stylesheet" href="/css/signin.css"></link>
+
+
+    <div id="logreg-forms">
+        <form class="form-signin">
+            <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> E-shram</h1>
+            <input type="aadharcafrd" id="aadharcard" class="form-control" placeholder="Enter valid Aadhar Card" required="" autofocus=""> 
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+            
+            <button class="btn btn-success btn-block center"  type="submit"><i class="fas fa-sign-in-alt"></i> Sign in</button>
+            
+            <a href="#" id="forgot_pswd">Forgot password?</a>
+            <!-- <p>Don't have an account!</p>  -->
+            <a href="/sign-up">
+            <button class="btn btn-primary btn-block" type="button" id="btn-signup"><i class="fas fa-user-plus"></i> Sign up New Account</button>
+                   
+            </a>
+            </form>
+
+                     
+            <br>
+            
+    </div>
+    <p style="text-align:center">
+        <a href="http://bit.ly/2RjWFMfunction toggleResetPswd(e){
+    e.preventDefault();
+    $('#logreg-forms .form-signin').toggle() // display:block or none
+    $('#logreg-forms .form-reset').toggle() // display:block or none
+}
+function toggleSignUp(e){
+    e.preventDefault();
+    $('#logreg-forms .form-signin').toggle(); // display:block or none
+    $('#logreg-forms .form-signup').toggle(); // display:block or none
+}
+$(()=>{
+    // Login Register Form
+    $('#logreg-forms #forgot_pswd').click(toggleResetPswd);
+    $('#logreg-forms #cancel_reset').click(toggleResetPswd);
+    $('#logreg-forms #btn-signup').click(toggleSignUp);
+    $('#logreg-forms #cancel_signup').click(toggleSignUp);
+})g" target="_blank" style="color:black"></a>
+    </p>
+    
+    <script src="/js/signin.js"></script>
+
